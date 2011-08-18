@@ -12,6 +12,13 @@ WriteMakefile(
     LIBS              => [''], # e.g., '-lm'
     DEFINE            => '', # e.g., '-DHAVE_SOMETHING'
     INC               => '-I.', # e.g., '-I. -I/usr/include/other'
+    META_MERGE        => {
+      resources => {
+        license    => 'http://dev.perl.org/licenses/artistic.html',
+        repository => 'http://github.com/thrig/Unix-Sysexits',
+        bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Unix-Sysexits',
+      }
+    },
 	# Un-comment this if you add C files to link with later:
     # OBJECT            => '$(O_FILES)', # link all the C files too
 );
