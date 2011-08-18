@@ -78,11 +78,6 @@ See sysexits(3) for details on the constants.
   use Unix::Sysexits;
   exit EX_USAGE;
 
-or
-
-  use Unix::Sysexits ();
-  exit Unix::Sysexits::EX_USAGE;
-
 =head1 DESCRIPTION
 
 No really, just a thin wrapper around sysexits(3) for those constants,
