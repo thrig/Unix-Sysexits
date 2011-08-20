@@ -80,8 +80,7 @@ See sysexits(3) for details on the constants.
 
 =head1 DESCRIPTION
 
-No really, just a thin wrapper around sysexits(3) for those constants,
-presumably for exit codes.
+No really, just a thin wrapper around sysexits(3) for those constants.
 
 =head2 EXPORT
 
