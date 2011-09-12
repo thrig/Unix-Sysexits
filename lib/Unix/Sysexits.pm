@@ -73,14 +73,16 @@ Unix::Sysexits - Perl extension for sysexits.h
 
 =head1 SYNOPSIS
 
-See sysexits(3) for details on the constants.
+Consult L<sysexits(3)> for details on the constants.
 
   use Unix::Sysexits;
   exit EX_USAGE;
 
 =head1 DESCRIPTION
 
-No really, just a thin wrapper around sysexits(3) for those constants.
+No really, just a thin wrapper around L<sysexits(3)> for those
+constants. See L<POSIX> for the EXIT_FAILURE and EXIT_SUCCESS stdlib
+constants.
 
 =head2 EXPORT
 
@@ -105,7 +107,7 @@ No really, just a thin wrapper around sysexits(3) for those constants.
 
 =head1 SEE ALSO
 
-sysexits(3)
+L<sysexits(3)>, L<POSIX>
 
 =head1 AUTHOR
 
