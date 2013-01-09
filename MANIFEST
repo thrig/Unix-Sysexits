@@ -1,10 +1,11 @@
 Changes
-Makefile.PL
+LICENSE
 MANIFEST
-ppport.h
+Makefile.PL
 README
 Sysexits.xs
-t/Unix-Sysexits.t
 fallback/const-c.inc
 fallback/const-xs.inc
 lib/Unix/Sysexits.pm
+ppport.h
+t/Unix-Sysexits.t
