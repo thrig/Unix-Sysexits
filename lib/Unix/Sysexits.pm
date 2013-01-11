@@ -1,3 +1,5 @@
+# -*- Perl -*-
+
 package Unix::Sysexits;
 
 use 5.006000;
