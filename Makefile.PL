@@ -1,6 +1,13 @@
 use 5.006000;
 use ExtUtils::MakeMaker;
 
+# Because where would sysexits.h come from? This is mostly to cut down
+# on false positives from smoke tester boxes.
+if ( $^O =~ m/MSWin32/ ) {
+  print "Sorry, no automated install is available on Windows.\n";
+  exit(0);
+}
+
 my %params = (
   NAME         => 'Unix::Sysexits',
   VERSION_FROM => 'lib/Unix/Sysexits.pm',    # finds $VERSION
