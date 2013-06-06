@@ -33,7 +33,7 @@ our @EXPORT = qw(
 	EX__MAX
 );
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -117,10 +117,10 @@ Jeremy Mates, E<lt>jmates@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2011 by Jeremy Mates
+Copyright (C) 2011,2013 by Jeremy Mates
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.14.1 or,
-at your option, any later version of Perl 5 you may have available.
+This library is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself, either Perl version 5.16 or, at
+your option, any later version of Perl 5 you may have available.
 
 =cut

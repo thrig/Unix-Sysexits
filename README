@@ -1,5 +1,4 @@
-Unix-Sysexits version 0.01
-==========================
+Unix-Sysexits
 
 Just a thin wrapper around sysexits(3).
 
@@ -14,16 +13,12 @@ To install this module type the following:
 
 DEPENDENCIES
 
-This module requires these other modules and libraries:
-
-  Test::More
+Unix or suitable .h files.
 
 COPYRIGHT AND LICENCE
 
-Put the correct copyright and licence information here.
+Copyright (C) 2011,2013 by jmates
 
-Copyright (C) 2011 by jmates
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.14.1 or,
-at your option, any later version of Perl 5 you may have available.
+This library is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself, either Perl version 5.16 or, at
+your option, any later version of Perl 5 you may have available.

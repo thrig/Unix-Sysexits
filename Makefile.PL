@@ -1,4 +1,9 @@
+#!perl
+
 use 5.006000;
+
+use strict;
+use warnings;
 use ExtUtils::MakeMaker;
 
 # Because where would sysexits.h come from? This is mostly to cut down
@@ -25,14 +30,22 @@ my %params = (
   INC    => '-I.',    # e.g., '-I. -I/usr/include/other'
 );
 
+if ( $ExtUtils::MakeMaker::VERSION =~ /^\d\.\d\d$/ and $ExtUtils::MakeMaker::VERSION > 6.30 ) {
+  $params{LICENSE} = 'perl';
+}
+
 if ( $ExtUtils::MakeMaker::VERSION ge '6.46' ) {
-  $parms{META_MERGE} = {
+  $params{META_MERGE} = {
     resources => {
-      license    => 'http://dev.perl.org/licenses/artistic.html',
+      homepage   => 'http://github.com/thrig/Unix-Sysexits',
+      license    => 'http://dev.perl.org/licenses/',
       repository => 'http://github.com/thrig/Unix-Sysexits',
-      bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Unix-Sysexits',
     }
   };
+}
+
+if ( $ExtUtils::MakeMaker::VERSION ge '6.48' ) {
+  $params{MIN_PERL_VERSION} = 5.006000;
 }
 
 WriteMakefile(%params);
