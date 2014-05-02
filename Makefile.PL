@@ -48,7 +48,7 @@ if ( $ExtUtils::MakeMaker::VERSION ge '6.48' ) {
   $params{MIN_PERL_VERSION} = 5.006000;
 }
 
-WriteMakefile(%params);
+WriteMakefile((MM->can('signature_target') ? (SIGN => 1) : ()), %params);
 
 if ( eval { require ExtUtils::Constant; 1 } ) {
   # If you edit these definitions to change the constants used by this module,
