@@ -1,24 +1,31 @@
-Unix-Sysexits
+Unix-Sysexits - a wafer-thin wrapper around sysexits(3)
 
-Just a thin wrapper around sysexits(3).
+Install from CPAN:
 
-INSTALLATION
+  cpan Unix::Sysexits
 
-To install this module type the following:
+For the source code, see:
 
-   perl Makefile.PL
-   make
-   make test
-   make install
+http://github.com/thrig/Unix-Sysexits
+
+This can be built and installed by running:
+
+  perl Makefile.PL
+  make
+  make test
+  make install
+
+Run perldoc(1) on Unix::Sysexits for more documentation, or really see
+sysexits(3) for the codes.
 
 DEPENDENCIES
 
-Unix or suitable .h files.
+Unix or suitable .h files, C compiler, etc.
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2011,2013 by jmates
+Copyright (C) 2011,2013-2015 Jeremy Mates
 
-This library is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself, either Perl version 5.16 or, at
-your option, any later version of Perl 5 you may have available.
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself, either Perl version 5.16 or, at your option, any
+later version of Perl 5 you may have available.
