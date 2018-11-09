@@ -1,4 +1,5 @@
 ppport.h linguist-vendored
 typemap linguist-vendored
+*.inc linguist-vendored
 *.t linguist-language=Perl
 Sysexits.xs linguist-language=XS
